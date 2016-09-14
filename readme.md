@@ -2,9 +2,9 @@
 # API :sunglasses:
 Type: JSON
 ***
-##获取所有 Orders
+## 获取所有 Orders
 
-###GET 请求 /api/orders
+### GET 请求 /api/orders
 响应示例（列表）：
 ```javascript
 [
@@ -22,9 +22,9 @@ Type: JSON
 ```
 
 ***
-##添加一个 Order
+## 添加一个 Order
 
-###POST 请求 /api/orders
+### POST 请求 /api/orders
 Post 示例：
 ```javascript
 {
@@ -42,8 +42,8 @@ Post 示例：
 ```
 
 ***
-##更新一个 Order
-###PUT 请求 /api/orders/<id>
+## 更新一个 Order
+### PUT 请求 /api/orders/{id}
 PUT示例：
 ```javascript
 {
@@ -53,5 +53,5 @@ PUT示例：
 }
 ```
 ***
-##删除一个 Order
-###DELETE 请求 /api/orders/<id>
+## 删除一个 Order
+### DELETE 请求 /api/orders/{id}
