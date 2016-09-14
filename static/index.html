@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Ajax demo</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <h1>jQuery Ajax demo</h1>
+    <h2>咖啡订单</h2>
+    <ul id="orders"></ul>
+
+    <template id="order-template">
+        <li data-id="{{id}}">
+            <p>
+                <strong>姓名：</strong>
+                <span class="noedit name">{{name}}</span>
+                <input class="edit name">
+            </p>
+            <p>
+                <strong>饮料：</strong>
+                <span class="noedit drink">{{drink}}</span>
+                <input class="edit drink">
+            </p>
+            <button data-id="{{id}}" class="remove">X</button>
+            <button class="editOrder noedit">编辑</button>
+            <button class="saveEdit edit">保存</button>
+            <button class="cancelEdit edit">取消</button>
+        </li>
+    </template>
+
+    <h4>添加一个咖啡订单</h4>
+    <p>姓名：<input type="text" id="name"></p>
+    <p>饮料：<input type="text" id="drink"></p>
+    <button id="add-order">添加</button>
+
+    <script src="/static/jquery-2.2.3.min.js"></script>
+    <script src="/static/mustache.min.js"></script>
+    <script type="text/javascript" src="/static/main.js"></script>
+</body>
+</html>

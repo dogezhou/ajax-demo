@@ -1,0 +1,27 @@
+body {
+    font: 14px;
+}
+
+ul {
+    margin:0;
+    padding:0;
+}
+
+li {
+    background-color: #E0DFE1;
+    list-style:none;
+    margin-right: 70%;
+}
+
+/* 正常模式下 edit元素的不显示，如input 取消按钮 */
+ul li .edit {
+    display: none;
+}
+/* 改变 li 的class="edit" 之后，把其中的 .edit 元素显示， noedit 元素不显示 */
+ul li.edit .edit {
+    display: initial;
+}
+
+ul li.edit .noedit {
+    display: none;
+}
