@@ -25,14 +25,14 @@ Type: JSON
 ##添加一个 Order
 
 ###POST 请求 /api/orders
-Post 示例
+Post 示例：
 ```javascript
 {
     name: 'James',
     drink: 'Coffie'
 }
 ```
-响应示例
+响应示例：
 ```javascript
 {
     id: 3,
